@@ -46,6 +46,6 @@ jobs:
           key: ${{ secrets.EC2_SSH_KEY }}
           script: |
             docker pull aditichauhan20/aditiapp:03011234
-            docker stop app || true
-            docker rm app || true
-            docker run -d -p 1234:1234 --name app aditichauhan20/aditiapp:03011234
+            docker stop aditi || true
+            docker rm aditi || true
+            docker run -d -p 1234:1234 --name aditi aditichauhan20/aditiapp:03011234
